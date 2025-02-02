@@ -1,0 +1,142 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo oscuro y coloración general */
+body {
+    background-color: #1a1a2e; /* Fondo oscuro */
+    color: #e1e1e6; /* Color de texto claro */
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Estilo del contenido centrado */
+.content {
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Imagen centrada */
+.image {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Mensaje de rechazo */
+.message {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #208169; /* Rosa brillante */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.apocosi {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    margin-top: -5px;
+    color: rgb(191, 213, 255);
+
+}
+
+/* Submensaje */
+.submessage {
+    font-size: 1.2rem;
+    color: #ffb3b3; /* Rosa claro */
+    margin-bottom: 30px;
+}
+
+/* Estilo de los botones */
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #00bcd4; /* Azul brillante */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #ff4081; /* Rosa brillante en hover */
+    transform: scale(1.05); /* Efecto de aumento */
+}
+
+/* Botón "Regresar" */
+.back-btn {
+    background-color: #00bcd4;
+}
+
+.back-btn:hover {
+    background-color: #ff4081;
+}
+
+/* Botón "Salir" */
+.close-btn {
+    background-color: #f44336; /* Rojo para el "no" */
+}
+
+.close-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Corazones flotantes */
+body::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    font-size: 3rem;
+    animation: floating 5s ease-in-out infinite;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    font-size: 3rem;
+    animation: floating 6s ease-in-out infinite;
+}
+.containerfi{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin-top: 0;
+    margin-left: 0;
+    z-index: -1;
+  }
+canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }

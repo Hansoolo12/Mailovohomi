@@ -1,0 +1,175 @@
+@keyframes neonEffect {
+    0% { color: white; text-shadow: 0 0 5px white; }
+    50% { color: #3437f5; text-shadow: 0 0 15px #3437f5, 0 0 30px #3437f5; }
+    100% { color: white; text-shadow: 0 0 5px white; }
+}
+h1 {
+    font-size: 7em;
+    animation: neonEffect 3.5s infinite alternate;
+    text-align: center;
+}
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-color: #090e20;
+}
+p {
+    margin-top: -55px;
+    font-size: 1.5em;
+    color: #a8a4a4;
+    font-family: 'Courier New', Courier, monospace;
+}
+.buttons {
+    margin-top: 20px;
+    z-index: 2;
+}
+button {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.yes {
+    background-color: #ff69b4;
+    color: white;
+}
+
+.yes:hover {
+    background-color: #ff1493;
+    transform: scale(1.1);
+}
+
+.no {
+    background-color: #ccc;
+    color: black;
+}
+
+.no:hover {
+    background-color: #a8a8a8;
+    transform: scale(1.1);
+}
+
+.Carta {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.9em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #6985ff;
+    color: white;
+    margin: -33px;
+    transition: all 0.3s ease-in-out;
+}
+
+.Carta:hover {
+    background-color: #4a65d4;
+    transform: scale(1.1);
+}
+
+.Cartona {
+    margin-top: -140px;
+    margin-left: 1100px;
+    z-index: 4;
+    rotate: 90deg;
+}
+/* Contenedor de estrellas */
+.stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+/* Animación de parpadeo de estrellas */
+@keyframes twinkling {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+}
+
+/* Generación de múltiples estrellas */
+@keyframes starMove {
+    0% { opacity: 0; transform: scale(0.5) translateY(0); }
+    50% { opacity: 1; transform: scale(1) translateY(-10px); }
+    100% { opacity: 0; transform: scale(0.5) translateY(-20px); }
+}
+
+.stars div {
+    position: absolute;
+    background-color: white;
+    width: 4.3px;
+    height: 4.3px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px white;
+    animation: starMove 10s infinite alternate ease-in-out;
+}
+
+/* Posiciones aleatorias de las estrellas */
+/* Generación de más estrellas con diferentes posiciones */
+.stars div:nth-child(1) { top: 10%; left: 20%; animation-duration: 3s; }
+.stars div:nth-child(2) { top: 30%; left: 50%; animation-duration: 4.5s; }
+.stars div:nth-child(3) { top: 70%; left: 80%; animation-duration: 5s; }
+.stars div:nth-child(4) { top: 50%; left: 10%; animation-duration: 4.5s; }
+.stars div:nth-child(5) { top: 90%; left: 60%; animation-duration: 5s; }
+.stars div:nth-child(6) { top: 20%; left: 70%; animation-duration: 4.5s; }
+.stars div:nth-child(7) { top: 40%; left: 30%; animation-duration: 4.5s; }
+.stars div:nth-child(8) { top: 15%; left: 85%; animation-duration: 4.8s; }
+.stars div:nth-child(9) { top: 60%; left: 15%; animation-duration: 5.5s; }
+.stars div:nth-child(10) { top: 80%; left: 45%; animation-duration: 4.8s; }
+.stars div:nth-child(11) { top: 25%; left: 40%; animation-duration: 4.8s; }
+.stars div:nth-child(12) { top: 55%; left: 75%; animation-duration: 5s; }
+.stars div:nth-child(13) { top: 90%; left: 25%; animation-duration: 4s; }
+.stars div:nth-child(14) { top: 35%; left: 5%; animation-duration: 5.5s; }
+.stars div:nth-child(15) { top: 10%; left: 55%; animation-duration: 4.8s; }
+.stars div:nth-child(16) { top: 50%; left: 90%; animation-duration: 4.5s; }
+.stars div:nth-child(17) { top: 75%; left: 10%; animation-duration: 5s; }
+.stars div:nth-child(18) { top: 5%; left: 30%; animation-duration: 4.5s; }
+.stars div:nth-child(19) { top: 85%; left: 70%; animation-duration: 4.5s; }
+.stars div:nth-child(20) { top: 95%; left: 50%; animation-duration: 4.5s; }
+.stars div:nth-child(21) { top: 15%; left: 90%; animation-duration: 3.7s; }
+.stars div:nth-child(22) { top: 50%; left: 40%; animation-duration: 4.3s; }
+.stars div:nth-child(23) { top: 25%; left: 80%; animation-duration: 5.2s; }
+.stars div:nth-child(24) { top: 75%; left: 5%; animation-duration: 4.7s; }
+.stars div:nth-child(25) { top: 60%; left: 90%; animation-duration: 5.1s; }
+.stars div:nth-child(26) { top: 20%; left: 5%; animation-duration: 4.8s; }
+.stars div:nth-child(27) { top: 40%; left: 80%; animation-duration: 5.3s; }
+.stars div:nth-child(28) { top: 85%; left: 15%; animation-duration: 4.9s; }
+.stars div:nth-child(29) { top: 10%; left: 75%; animation-duration: 4.4s; }
+.stars div:nth-child(30) { top: 95%; left: 35%; animation-duration: 5.2s; }
+.stars div:nth-child(31) { top: 55%; left: 5%; animation-duration: 4.6s; }
+.stars div:nth-child(32) { top: 75%; left: 90%; animation-duration: 4.5s; }
+.stars div:nth-child(33) { top: 30%; left: 60%; animation-duration: 5s; }
+.stars div:nth-child(34) { top: 45%; left: 20%; animation-duration: 4.8s; }
+.stars div:nth-child(35) { top: 85%; left: 25%; animation-duration: 5.4s; }
+.stars div:nth-child(36) { top: 15%; left: 10%; animation-duration: 4.7s; }
+.stars div:nth-child(37) { top: 60%; left: 50%; animation-duration: 5s; }
+.stars div:nth-child(38) { top: 25%; left: 90%; animation-duration: 4.6s; }
+.stars div:nth-child(39) { top: 80%; left: 50%; animation-duration: 5.1s; }
+.stars div:nth-child(40) { top: 45%; left: 10%; animation-duration: 4.3s; }
+
+
+
