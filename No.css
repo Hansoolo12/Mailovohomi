@@ -41,6 +41,10 @@ body {
     margin-bottom: 20px;
 }
 
+.image1 {
+    height: 210px;
+}
+
 /* Mensaje de rechazo */
 .message {
     font-size: 1.8rem;
